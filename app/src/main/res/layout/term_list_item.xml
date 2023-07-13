@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/lvTermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Temp Term Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/lvTermStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvTermTitle"
+        android:layout_marginTop="3dp"
+        android:text="01-01-2018"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/lvTermDash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvTermTitle"
+        android:layout_toRightOf="@+id/lvTermStart"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:text=" - "
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/lvTermEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvTermTitle"
+        android:layout_toRightOf="@+id/lvTermDash"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="06/30/2018"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

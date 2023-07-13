@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssessmentDetailActivity">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/adAssessmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Assessment Name"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:text="Due Date:"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adStatusLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/status"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adAssessmentName" />
+
+    <TextView
+        android:id="@+id/adStatusTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="2dp"
+        android:text="Not yet taken"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adStatusLbl" />
+
+    <ListView
+        android:id="@+id/assessmentNotesListView"
+        android:layout_width="368dp"
+        android:layout_height="167dp"
+        android:divider="@android:color/black"
+        android:dividerHeight="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adAssessmentNotesLbl" />
+
+    <TextView
+        android:id="@+id/adAssessmentNotesLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/assessment_notes"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adStatusTxt" />
+
+    <Button
+        android:id="@+id/editAssessmentBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:onClick="editAssessmentBtnAction"
+        android:text="@string/edit_assessment"
+        app:layout_constraintEnd_toStartOf="@+id/deleteAssessmentBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentNotesListView" />
+
+    <Button
+        android:id="@+id/deleteAssessmentBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:onClick="deleteAssessmentBtnAction"
+        android:text="@string/delete_assessment"
+        app:layout_constraintStart_toEndOf="@+id/editAssessmentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentNotesListView" />
+
+    <Button
+        android:id="@+id/adAddAssessmentNoteBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="8dp"
+        android:onClick="adAddAssessmentNoteBtnAction"
+        android:text="@string/add_new_assessment_note"
+        app:layout_constraintEnd_toStartOf="@+id/adSendAssessmentNotesBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAssessmentBtn" />
+
+    <Button
+        android:id="@+id/adAssessmentListBtn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:onClick="adAssessmentListBtnAction"
+        android:text="@string/view_assessments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adViewAssessmentAlertsBtn" />
+
+    <Button
+        android:id="@+id/adViewAssessmentAlertsBtn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:onClick="adViewAssessmentAlertsBtnAction"
+        android:text="@string/view_assessment_alerts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adAddAssessmentNoteBtn" />
+
+    <Button
+        android:id="@+id/adSendAssessmentNotesBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:onClick="adSendAssessmentNotesBtnAction"
+        android:text="@string/send_notes_to_email"
+        app:layout_constraintStart_toEndOf="@+id/adAddAssessmentNoteBtn"
+        app:layout_constraintTop_toBottomOf="@+id/deleteAssessmentBtn" />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

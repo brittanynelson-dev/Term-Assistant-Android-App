@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">WGU Term Assistant</string>
+    <string name="current_term">CURRENT TERM</string>
+    <string name="view_terms">VIEW ALL TERMS</string>
+    <string name="view_courses">VIEW COURSES</string>
+    <string name="no_terms_error">You currently have no terms assigned.</string>
+    <string name="create_term_prompt">Create a new term now?</string>
+    <string name="add_term">ADD TERM</string>
+    <string name="edit_term">EDIT TERM</string>
+    <string name="term_title">Term Title:</string>
+    <string name="start_date">Start Date:</string>
+    <string name="end_date">End Date:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="clear">CLEAR</string>
+    <string name="all_terms">All Terms</string>
+    <string name="delete_term">DELETE TERM</string>
+    <string name="status">STATUS:</string>
+    <string name="mentor_contact_info">Mentor Contact Information:</string>
+    <string name="view_assessments">VIEW ASSESSMENTS</string>
+    <string name="view_notes">VIEW NOTES</string>
+    <string name="edit_course">EDIT COURSE</string>
+    <string name="delete_course">DELETE COURSE</string>
+    <string name="add_new_term">ADD NEW TERM</string>
+    <string name="add_new_course">ADD NEW COURSE</string>
+    <string name="course_name">Course name:</string>
+    <string name="course_status">Course status:</string>
+    <string name="mentor_name">Mentor name:</string>
+    <string name="mentor_phone">Mentor phone:</string>
+    <string name="mentor_email">Mentor email:</string>
+    <string name="course_alerts">Turn on alerts for the start and end of this course?</string>
+    <string name="change_course_term">MOVE COURSE TO ANOTHER TERM</string>
+    <string name="course_alerts_active">Course Alerts: Active</string>
+    <string name="course_alerts_inactive">Course Alerts: Inactive</string>
+    <string name="add_new_course_notes">ADD NEW COURSE NOTE</string>
+    <string name="add_new_assessement">ADD NEW ASSESSMENT</string>
+    <string name="submit_changes">SUBMIT CHANGES</string>
+    <string name="delete_note">DELETE NOTE</string>
+    <string name="view_course_notes">VIEW COURSE NOTES</string>
+    <string name="view_course">VIEW COURSE</string>
+    <string name="assessment_name">Assessment name:</string>
+    <string name="assessment_due_date">Due Date:</string>
+    <string name="assessment_notes">Assessment notes:</string>
+    <string name="assessment_status">Status:</string>
+    <string name="edit_assessment">EDIT ASSESSMENT</string>
+    <string name="delete_assessment">DELETE ASSESSMENT</string>
+    <string name="add_new_assessment_note">ADD NEW ASSESSMENT NOTE</string>
+    <string name="view_assessment_alerts">VIEW ALERTS FOR THIS ASSESSMENT</string>
+    <string name="view_assessment">VIEW ASSESSMENT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="add_new_assessment_alert">ADD NEW ASSESSMENT ALERT</string>
+    <string name="delete_alert">DELETE ALERT</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="message_text">Message text:</string>
+    <string name="send_notes_to_email">SEND NOTES TO EMAIL</string>
+    <string name="enter_email">Enter the email address to send notes to:</string>
+    <string name="send_email">SEND EMAIL</string>
+    <string name="home">Home</string>
+    <string name="return_to_term">Return to term</string>
+    <string name="return_to_course">Return to course</string>
+    <string name="return_to_assessment">Return to assessment</string>
+    <string name="progress_tracker">Progress Tracker / Schedule</string>
+    <string name="courses">Courses:</string>
+    <string name="planned_in_progress">Planned/In Progress:</string>
+    <string name="completed">Completed:</string>
+    <string name="dropped">Dropped:</string>
+    <string name="assessments">Assessments:</string>
+    <string name="not_yet_taken">Not Yet Taken:</string>
+    <string name="passed">Passed:</string>
+    <string name="failed">Failed:</string>
+    <string name="upcoming_courses">Upcoming Courses:</string>
+    <string name="upcoming_assessment_alerts">Upcoming Assessment Alerts:</string>
+    <string name="course_percentage_error">You have not yet entered any course information. Please enter course data and return to this page to track progress.</string>
+    <string name="assessment_not_taken_error">You have not yet attempted any assessments. Please enter completed assessment data and return to this page to track progress.</string>
+    <string name="assessment_percentage_error">You have not yet entered any assessment information. Please enter assessment data and return to this page to track progress.</string>
+
+    <string-array name="course_status_array">
+        <item>Plan To Take</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+    </string-array>
+
+    <string-array name="course_saved_options_array">
+        <item>Add assessments</item>
+        <item>Add course notes</item>
+        <item>Create a new course</item>
+        <item>Go to course list</item>
+    </string-array>
+
+    <string-array name="assessment_status_array">
+        <item>Not Yet Taken</item>
+        <item>Passed</item>
+        <item>Failed</item>
+    </string-array>
+
+    <string-array name="hour_array">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="minute_array">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+</resources>
